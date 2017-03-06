@@ -1,0 +1,17 @@
+{
+  "name": "bitfroster/test-nfs",
+  "require": {
+    "doctrine/cache": "~1.6",
+    "knplabs/gaufrette": "0.1.*",
+    "monolog/monolog": "1.*",
+    "guzzle/guzzle": "*",
+    "symfony/yaml": "2.7.*",
+    "symfony/validator": "2.7.*",
+    "foolz/sphinxql-query-builder": "1.0.*",
+    "phpmailer/phpmailer": "~5.2",
+    "codeception/codeception": "^2.2",
+    "flow/jsonpath": "~0.3",
+    "nesbot/carbon": "~1.18",
+    "gomoob/php-pushwoosh": "~1.7"
+  }
+}

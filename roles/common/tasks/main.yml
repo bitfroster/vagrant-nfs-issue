@@ -1,0 +1,17 @@
+---
+- name: reload apt-get packages
+  apt: update_cache=yes
+  become: yes
+
+- name: Install basic packages
+  apt: pkg="{{ item }}" state='present'
+  become: yes
+  with_items: "{{ basic_packages }}"
+
+- name: required dirs in user dir
+  file: state=directory dest=/home/{{ user }}/{{ item }} mode=0777 owner={{ user }} group={{ user }}
+  tags: common
+  become: yes
+  with_items:
+    - logs
+    - tmp

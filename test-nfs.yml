@@ -1,0 +1,8 @@
+---
+- name: provisioning for local dev machine
+  hosts: base
+  user: "{{ user }}"
+
+  roles:
+    - common
+    - php
