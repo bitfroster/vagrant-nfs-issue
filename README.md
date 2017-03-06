@@ -15,7 +15,9 @@ Run ```vagrant up```
 Then connect to the machine, go to nfs folder and run ```composer install```:
 
 ```vagrant ssh```
+
 ```cd nfs```
+
 ```composer install```
 
 ## Note
